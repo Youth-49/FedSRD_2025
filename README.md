@@ -52,7 +52,7 @@ Run outputs are saved to a timestamped directory and include:
 | --- | --- | --- |
 | In‑domain | Code | HumanEval (0-shot); Sanitized MBPP (3-shot) |
 | In‑domain | Medical | MedQA (1-shot); MedMCQA (1-shot) |
-| In‑domain | Finance | FinEval; FinanceIQ |
-| In‑domain | Math | GSM8K; MATH |
-| Out‑of‑domain | General | AGIEval |
+| In‑domain | Finance | FinEval (0-shot); FinanceIQ (0-shot) |
+| In‑domain | Math | GSM8K (0-shot); MATH (0-shot) |
+| Out‑of‑domain | General | AGIEval (0-shot) |
 | Out‑of‑domain | Law | LawBench (1-shot) |
