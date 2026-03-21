@@ -7,10 +7,15 @@ The current paradigm of training large language models (LLMs) on public availabl
 ---
 
 ### Overview
-FedSRD (Sparsify‑Reconstruct‑Decompose) targets communication overhead in federated LoRA fine‑tuning:
+FedSRD (Sparsify‑Reconstruct‑Decompose) targets communication overhead in federated LoRA fine‑tuning (collaborative learning from heterogeneous domains):
 - Client side: importance/structure‑aware sparsification of LoRA updates to reduce upload size.
 - Server side: reconstruct and aggregate updates in full‑rank space, then decompose into sparse low‑rank updates for broadcast.
 - FedSRD‑e: a lightweight variant that skips the SVD reconstruction step to reduce compute.
+
+Beyond the pipeline itself, FedSRD offers three practical advantages:
+- Communication‑efficient: aggressive yet structure‑preserving update compression substantially reduces communication cost.
+- Effective cross‑domain knowledge merging: full‑rank reconstruction and aggregation help combine client updates from heterogeneous domains more effectively.
+- Stable OOD knowledge retention: federated specialization preserves broader out‑of‑domain capabilities more reliably while adapting to domain‑specific data.
 
 ### Setup
 1) Install dependencies
